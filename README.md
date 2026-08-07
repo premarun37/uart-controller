@@ -78,6 +78,22 @@ uart_controller
 
 # RTL Modules
 
+## Source Files
+
+| Module | Description |
+|----------|----------|
+| [top.v](src/top.v) | Top-level UART Controller |
+| [uart_rx.v](src/uart_rx.v) | UART Receiver |
+| [uart_tx.v](src/uart_tx.v) | UART Transmitter |
+
+## Testbenches
+
+| Testbench | Description |
+|------------|------------|
+| [tb_top.v](tb/tb_top.v) | Top-level Loopback Verification |
+| [tb_uart_rx.v](tb/tb_uart_rx.v) | UART RX Verification |
+| [tb_uart_tx.v](tb/tb_uart_tx.v) | UART TX Verification |
+
 ## uart_rx.v
 
 UART Receiver FSM:
@@ -333,7 +349,7 @@ Flow Stages:
 
 # Final Summary
 
-![Routing](img/gds.png)
+![GDS](img/gds.png)
 
 | Parameter | Value |
 |------------|--------|
@@ -353,14 +369,16 @@ Flow Stages:
 
 ---
 
-## Tools Used
+## Tools & PDK Used
 
-- Verilog HDL
+- Verilator
 - Icarus Verilog
 - GTKWave
 - OpenLane
 - OpenROAD
 - Yosys
+- TritonCTS
+- FastRoute
 - Magic
 - Netgen
 - SKY130 PDK
@@ -371,7 +389,5 @@ Flow Stages:
 
 **Prem Arun P**
 
-Electronics and Communication Engineering  
-Madras Institute of Technology, Anna University
 
 
