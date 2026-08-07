@@ -333,6 +333,8 @@ Flow Stages:
 
 # Final Summary
 
+![Routing](img/gds.png)
+
 | Parameter | Value |
 |------------|--------|
 | Technology | SKY130A |
